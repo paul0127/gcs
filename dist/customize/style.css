@@ -81,107 +81,48 @@ body{font-family: 'Microsoft JhengHei',"Fredoka One",cursive;font-weight: 500;}
   }
 }
 
-.menuarea{width:100%;position:relative;display: flex;align-items: stretch;}
-.logoarea{flex:0 0 230px;margin-right: 5px;display: flex;align-items: center;padding: 1rem 0;}
-.logoarea a{display: block;}
-.logoarea img{max-width:100%;}
-.main-menu{flex:1;}
-.main-menu ul.nav {
-  width: 100%;
-  height: 100%;
-  display: flex;
-}
-.main-menu ul.nav li{
-	display: inline-block;
-	text-align:center;
-	position: relative;
-	padding:0 15px;
-  margin-right:5px;
-  width:130px;
-} 
+.header_top{background-color: #527ac0;padding: 8px 0;font-size: .9rem;}
+.header_top .container{display: flex;align-items: center;justify-content: flex-end;}
+.header_top ul.top_nav{display: flex;list-style: none;padding-left: 0;margin-bottom: 0;margin-right: 10px;}
+.header_top ul.top_nav li{display:flex;align-items:center;}
+.header_top ul.top_nav li::before{content:'';border-right:1px solid #fff;margin:0 5px;height:14px;}
+.header_top ul.top_nav li:last-child::after{content:'';border-right:1px solid #fff;margin:0 3px;height:14px;}
+.header_top ul.top_nav li a{color: #fff;text-decoration: none;}
+.header_top ul.top_nav li a:hover{opacity: .8;}
+.header_top .font_size{display: flex;align-items: center;color: #fff;}
+.header_top .font_size label{display: flex;align-items: center;margin-bottom: 0;border-left: 1px solid #fff;border-right: 1px solid #fff;line-height: 1;margin-right: 10px;}
+.header_top .font_size label::before{content:'';border-right:1px solid #fff;margin:0 5px 0 2px;height:14px;}
+.header_top .font_size label::after{content:'';border-right:1px solid #fff;margin:0 2px 0 5px;height:14px;}
+.header_top .font_size ul{display: flex;align-items: center;list-style: none;margin-bottom: 0;padding-left: 0;}
+.header_top .font_size ul li{display: flex;align-items: center;cursor: pointer;}
+.header_top .font_size ul li:hover{opacity: .8;}
+.header_top .font_size ul li::after{content: "．";margin: 0px 3px;}
+.header_top .font_size ul li:last-child::after{display: none;}
 
-.main-menu ul.nav li a {
-  color: #2e3233;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  font-size:1rem;
-  font-weight:bold;
-  transition: all .2s;
-  letter-spacing:2px;
-  border-bottom:2px solid rgba(0,0,0,.0);
-  text-decoration:none;
-}
-.main-menu ul.nav li:hover a{border-bottom:2px solid #142e7c;color:#142e7c;}
-.main-menu ul.nav li ul.sub-menu{
-  list-style: outside none none;
-  margin-left: -20px;
-  padding:5px 0;
-  position: absolute;
-  z-index: 9999;
-  transform: scaleY(0);
-  transform-origin: 0 0 0;
-  transition: all 0.5s ease 0s;
-  width:100%;
-}
-.main-menu ul.nav li ul.sub-menu li{
-  border-right: medium none;
-  display: block;
-  float: left;
-  width: 100%;
-  padding:5px;
-  clear:both;
-}
-.main-menu ul.nav li ul.sub-menu li a{
-  color: #000;	
-  line-height:140%;
-  text-decoration:none;
-  font-size:14px;
-  letter-spacing:0;
-  display:block;
-  border: none;
-  padding:5px 0;
-}
+.menuarea{width:100%;position:relative;display: flex;align-items: stretch;}
+.logoarea{flex:0 0 300px;margin-right: 5px;display: flex;align-items: center;padding: 1rem 0;}
+.logoarea a{display: block;}
+.logoarea a img{max-width:100%;}
+.main-menu{flex:1;}
+.main-menu ul.nav {width: 100%;height: 100%;display: flex;}
+.main-menu ul.nav li{display: inline-block;text-align:center;position: relative;padding:0 15px;margin-right:5px;} 
+
+.main-menu ul.nav li a{color: #000;display: flex;align-items: center;justify-content: center;width: 100%;height: 100%;font-size:1rem;font-weight:bold;transition: all .2s;letter-spacing:2px;text-decoration:none;}
+.main-menu ul.nav li:hover a{color:#142e7c;}
+.main-menu ul.nav li ul.sub-menu{list-style: outside none none;margin-left: -20px;padding:5px 0;position: absolute;z-index: 9999;transform: scaleY(0);transform-origin: 0 0 0;transition: all 0.5s ease 0s;width:100%;}
+.main-menu ul.nav li ul.sub-menu li{border-right: medium none;display: block;float: left;width: 100%;padding:5px;clear:both;}
+.main-menu ul.nav li ul.sub-menu li a{color: #000;	line-height:140%;text-decoration:none;font-size:14px;letter-spacing:0;display:block;border: none;padding:5px 0;}
 .main-menu ul.nav li ul.sub-menu li:hover a{border:none;}
 .main-menu ul.nav li ul.sub-menu li a:hover{color:#569d36;	}
-.main-menu ul.nav li:hover ul.sub-menu{
-  transform: scaleY(1);
-  z-index: 9999; 
-  background:#fff;
-  border:1px solid #e2e2e2;
-}
+.main-menu ul.nav li:hover ul.sub-menu{transform: scaleY(1);z-index: 9999; background:#fff;border:1px solid #e2e2e2;}
 
 .main_search{display: flex;align-items: center;}
 .main_search input{padding: 5px;font-size: 1rem;max-width:calc(100% - 44px)}
 .main_search button{background: none;border: none;color:#777;line-height: 40px;}
 
 /*scrollUp*/
-#scrollUp {
-  background: #142e7c;
-  border: 1px solid #fff;
-  bottom: 25px;
-  cursor: pointer;
-  height: 40px;
-  font-size: 18px;
-  position: fixed;
-  right: 16px;
-  text-align: center;
-  width: 40px;
-  z-index: 9999;
-  position:relative;
-}
-
-#scrollUp i {
-  display: block;
-  padding-top: 8px;
-  font-size: 30px;
-  left: 10px;
-  position: absolute;
-  top: -4px;
-  color:#fff;
-}
+#scrollUp {background: #142e7c;border: 1px solid #fff;bottom: 25px;cursor: pointer;height: 40px;font-size: 18px;position: fixed;right: 16px;text-align: center;width: 40px;z-index: 9999;position:relative;}
+#scrollUp i {display: block;padding-top: 8px;font-size: 30px;left: 10px;position: absolute;top: -4px;color:#fff;}
 
 /*排序*/
 .page_filter{display: flex;justify-content: flex-end;}
@@ -191,25 +132,6 @@ body{font-family: 'Microsoft JhengHei',"Fredoka One",cursive;font-weight: 500;}
 .page_filter_number select{padding: 5px 10px;}
 
 #fancybox-close {display: block;}
-
-/* 上捲menu*/
-.fixed-strip {
-position: fixed;
-top: 0px;
-right: 0;
-left: 0;
-z-index: 9999;
--webkit-transition: all 0.5s ease;
--ms-transition: all 0.5s ease;
--moz-transition: all 0.5s ease;
--o-transition: all 0.5s ease;
-transition: all 0.5s ease;
-background:#fff;
-padding-top:0;
-box-shadow: 0px 2px 2px #aaa;
-border-top: none;
-}
-.fixed-strip .over_header{display:none;}
 
 /*footer*/
 footer{background:#000;padding:0 20px;}

@@ -65,15 +65,6 @@ document.addEventListener(
     });
 })(jQuery);
 
-$(window).scroll(function() {
-    var win_h = $(document).scrollTop();
-    if (win_h >= 70) {
-        $('.header_area').addClass('fixed-strip');
-    } else {
-        $('.header_area').removeClass('fixed-strip');
-    }
-});
-
 $('.banner_silder').owlCarousel({
   loop:true,
   margin:10,
